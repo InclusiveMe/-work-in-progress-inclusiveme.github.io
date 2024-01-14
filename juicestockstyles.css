@@ -14,7 +14,7 @@ header {
 
 nav {
     text-align: center;
-    background-color: #333;
+    background-color: #333; 
     padding: 10px;
 }
 
@@ -26,13 +26,21 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 5px; 
 }
 
 nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 5px 10px; 
+    border-radius: 15px; 
+    background-color: #65686d; 
+    transition: background-color 0.3s ease; 
+}
+
+nav a:hover {
+    background-color: #45a049; 
 }
 
 .product-grid {
