@@ -43,7 +43,7 @@ nav a {
 }
 
 .product-item {
-    width: calc(20% - 20px); /* Platums, lai 5 produkti iet vienā rindā ar nelielu atstarpi */
+    width: 25%; 
     text-align: center;
     margin: 10px;
 }
@@ -65,4 +65,9 @@ nav a {
 .navailability {
     color: red;
     font-weight: bold;
+}
+
+img {
+    min-width: 110px;
+    min-height: 110px;
 }
