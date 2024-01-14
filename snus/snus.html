@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="C:\Users\vikto\Desktop\Viktors\index\logo.ico" type="image/x-icon">
+    <title>Snus</title>
+</head>
+<body>
+
+    <header>
+        <h1>OVT</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="C:\Users\vikto\Desktop\Viktors\index.html">Sākums</a></li>
+            <li><a href="C:\Users\vikto\Desktop\Viktors\juice\juice.html">Juice</a></li>
+            <li><a href="C:\Users\vikto\Desktop\Viktors\snus\snus.html">Snus</a></li>
+        </ul>
+    </nav>
+
+    <div class="product-preview">
+        <img src="snusimage.jpg" alt="Snus Produkta Attēls">
+        <h2>Iceberg Snus</h2>
+        <p>150mg</p>
+        <button onclick="showAvailability()">Pārbaudīt Pieejamību</button>
+    </div>
+
+    <div class="availability-modal" id="availabilityModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Produkta Pieejamība</h3>
+            <p>Šis produkts ir pieejams.</p>
+            <p><a href="snusstock.html">Apskatīt visas pieejamās garšas</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showAvailability() {
+            document.getElementById('availabilityModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('availabilityModal').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
